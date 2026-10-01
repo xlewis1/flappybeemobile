@@ -30,6 +30,8 @@ function loadImage(path) {
 }
 
 export async function loadAssets() {
+    const base = import.meta.env.BASE_URL;
+
     const [
         background,
         wingsUp,
@@ -37,11 +39,11 @@ export async function loadAssets() {
         shortFlower,
         tallFlower
     ] = await Promise.all([
-        loadImage("/Background.png"),
-        loadImage("/Bumble_1.png"),
-        loadImage("/Bumble_2.png"),
-        loadImage("/flower_1.png"),
-        loadImage("/Flower_2.png")
+        loadImage(`${base}Background.png`),
+        loadImage(`${base}Bumble_1.png`),
+        loadImage(`${base}Bumble_2.png`),
+        loadImage(`${base}flower_1.png`),
+        loadImage(`${base}Flower_2.png`)
     ]);
 
     assets.background = background;
@@ -328,14 +330,6 @@ export function updateGame(game, dt) {
 
 function drawBackground(ctx, game) {
     const image = assets.background;
-
-    const scaleX =
-        SCREEN_WIDTH /
-        image.width;
-
-    const scaleY =
-        SCREEN_HEIGHT /
-        image.height;
 
     ctx.drawImage(
         image,
