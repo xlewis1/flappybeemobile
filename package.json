@@ -1,0 +1,18 @@
+{
+    "name": "flappy-bee-mobile",
+    "version": "1.0.0",
+    "description": "A mobile React remake of Flappy Bee",
+    "main": "src/main.jsx",
+    "scripts": {
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    , "@rolldown/binding-darwin-arm64": "^1.2.12"},
+    "devDependencies": {
+        "vite": "^7.1.0"
+    }
+}
