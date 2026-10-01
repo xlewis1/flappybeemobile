@@ -67,6 +67,150 @@
     "@rolldown/binding-darwin-arm64": {
       "version": "1.2.12",
       "resolved": "https://registry.npmjs.org/%40rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.12.tgz"
+    },
+    "react": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.3.0.tgz"
+    },
+    "react-dom": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.0.tgz"
+    },
+    "scheduler": {
+      "version": "0.28.0",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz"
+    },
+    "@rolldown/binding-darwin-arm64": {
+      "version": "1.2.12",
+      "resolved": "https://registry.npmjs.org/%40rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.12.tgz"
+    },
+    "vite": {
+      "version": "8.3.2",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.2.tgz"
+    },
+    "lightningcss": {
+      "version": "1.33.0",
+      "resolved": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz"
+    },
+    "detect-libc": {
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz"
+    },
+    "picomatch": {
+      "version": "4.0.7",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz"
+    },
+    "postcss": {
+      "version": "8.5.28",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz"
+    },
+    "nanoid": {
+      "version": "6.0.1",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-6.0.1.tgz"
+    },
+    "picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
+    },
+    "source-map-js": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz"
+    },
+    "rolldown": {
+      "version": "1.2.12",
+      "resolved": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.12.tgz"
+    },
+    "@oxc-project/types": {
+      "version": "0.152.0",
+      "resolved": "https://registry.npmjs.org/%40oxc-project/types/-/types-0.152.0.tgz"
+    },
+    "@rolldown/pluginutils": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/%40rolldown/pluginutils/-/pluginutils-1.0.1.tgz"
+    },
+    "tinyglobby": {
+      "version": "0.2.17",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz"
+    },
+    "fdir": {
+      "version": "6.5.0",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz"
+    },
+    "lightningcss-darwin-arm64": {
+      "version": "1.33.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz"
+    },
+    "react": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.3.0.tgz"
+    },
+    "react-dom": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.0.tgz"
+    },
+    "scheduler": {
+      "version": "0.28.0",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz"
+    },
+    "@rolldown/binding-darwin-arm64": {
+      "version": "1.2.12",
+      "resolved": "https://registry.npmjs.org/%40rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.12.tgz"
+    },
+    "lightningcss-darwin-arm64": {
+      "version": "1.33.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz"
+    },
+    "vite": {
+      "version": "8.3.2",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.2.tgz"
+    },
+    "lightningcss": {
+      "version": "1.33.0",
+      "resolved": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz"
+    },
+    "detect-libc": {
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz"
+    },
+    "picomatch": {
+      "version": "4.0.7",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz"
+    },
+    "postcss": {
+      "version": "8.5.28",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz"
+    },
+    "nanoid": {
+      "version": "6.0.1",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-6.0.1.tgz"
+    },
+    "picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
+    },
+    "source-map-js": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz"
+    },
+    "rolldown": {
+      "version": "1.2.12",
+      "resolved": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.12.tgz"
+    },
+    "@oxc-project/types": {
+      "version": "0.152.0",
+      "resolved": "https://registry.npmjs.org/%40oxc-project/types/-/types-0.152.0.tgz"
+    },
+    "@rolldown/pluginutils": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/%40rolldown/pluginutils/-/pluginutils-1.0.1.tgz"
+    },
+    "tinyglobby": {
+      "version": "0.2.17",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz"
+    },
+    "fdir": {
+      "version": "6.5.0",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz"
     }
   }
 }
