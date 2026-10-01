@@ -31,7 +31,9 @@ function Game() {
 
     useEffect(() => {
         musicRef.current =
-            new Audio("/beetheme.wav");
+            new Audio(
+               `${import.meta.env.BASE_URL}beetheme.wav`
+            );
 
         musicRef.current.loop = true;
         musicRef.current.volume = 0.7;
