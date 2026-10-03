@@ -97,8 +97,8 @@ body {
     width: 100%;
     height: auto;
 
-    max-height: 100%;
     max-width: 100%;
+    max-height: 100%;
 
     aspect-ratio: 4 / 3;
 
@@ -494,53 +494,38 @@ body {
     .game {
         width: 100vw;
         height: 100vh;
-
         min-height: 100vh;
 
-        padding:
-            8px
-            max(8px, env(safe-area-inset-left))
-            8px
-            max(8px, env(safe-area-inset-right));
+        padding: 8px;
 
         align-items: center;
         justify-content: center;
     }
 
-    /*
-       The actual game is 800x600 = 4:3.
-
-       Instead of stretching the frame across the entire
-       landscape screen, keep the game itself at 4:3 and
-       scale it to whatever height is available.
-    */
     .game-frame {
         width: min(
-            calc((100vh - 16px) * 4 / 3),
-            calc(100vw - 16px)
+            calc((100vh - 70px) * 4 / 3),
+            calc(100vw - 32px)
         );
 
         height: min(
-            calc(100vh - 16px),
-            calc((100vw - 16px) * 3 / 4)
+            calc(100vh - 70px),
+            calc((100vw - 32px) * 3 / 4)
         );
 
         aspect-ratio: 4 / 3;
 
+        transform: translateY(-18px);
+
         border: 3px solid #394968;
-        border-radius: 18px;
+        border-radius: 16px;
 
         box-shadow:
             0 0 0 3px #0a1020,
-            0 10px 30px rgba(0, 0, 0, 0.5),
-            inset 0 0 20px rgba(255, 255, 255, 0.05);
+            0 8px 24px rgba(0, 0, 0, 0.5),
+            inset 0 0 18px rgba(255, 255, 255, 0.05);
     }
 
-    /*
-       Canvas now fills the actual 4:3 game frame.
-       The logical 800x600 game therefore stays correctly
-       proportioned in landscape.
-    */
     .game-canvas {
         width: 100%;
         height: 100%;
@@ -554,86 +539,121 @@ body {
     }
 
     .hud {
-        top: 12px;
+        top: 8px;
     }
 
     .score {
-        padding: 4px 14px;
+        padding: 3px 10px;
 
         border-width: 2px;
-        border-radius: 10px;
+        border-radius: 8px;
 
-        font-size: 20px;
+        font-size: 16px;
+
+        letter-spacing: 1px;
     }
 
     .game-overlay {
-        padding: 20px;
+        padding: 12px;
     }
 
     .game-title {
-        font-size: 40px;
+        font-size: 30px;
+
+        margin-bottom: 5px;
+    }
+
+    .game-subtitle {
+        font-size: 10px;
 
         margin-bottom: 8px;
     }
 
-    .game-subtitle {
-        font-size: 12px;
-
-        margin-bottom: 12px;
-    }
-
     .final-score {
-        font-size: 17px;
+        font-size: 14px;
 
-        margin-bottom: 12px;
-    }
-
-    .game-button {
-        width: 200px;
-
-        min-height: 46px;
-
-        border-width: 3px;
-        border-radius: 13px;
-
-        font-size: 18px;
+        margin-bottom: 8px;
     }
 
     /*
-       The FLAP button now belongs to the same
-       4:3 game frame rather than the whole phone screen.
-    */
-    .flap-button {
-        bottom: 12px;
+     * Smaller PLAY / menu buttons in landscape.
+     */
+    .game-button {
+        width: 150px;
 
-        width: 220px;
-        height: 50px;
+        min-height: 36px;
 
-        border-width: 3px;
-        border-radius: 16px;
+        border-width: 2px;
+        border-radius: 10px;
 
-        font-size: 20px;
+        font-size: 14px;
+
+        letter-spacing: 0.5px;
 
         box-shadow:
-            0 6px 0 #a8440d,
-            0 0 18px rgba(255, 137, 30, 0.45);
+            0 4px 0 rgba(0, 0, 0, 0.35),
+            0 0 10px rgba(255, 255, 255, 0.15);
+    }
+
+    .game-button:active {
+        transform: translateY(3px);
+
+        box-shadow:
+            0 1px 0 rgba(0, 0, 0, 0.35),
+            0 0 8px rgba(255, 255, 255, 0.12);
+    }
+
+    .play-button {
+        box-shadow:
+            0 4px 0 #b67d00,
+            0 0 12px rgba(255, 216, 61, 0.4);
+    }
+
+    .play-button:active {
+        box-shadow:
+            0 1px 0 #b67d00,
+            0 0 9px rgba(255, 216, 61, 0.3);
+    }
+
+    /*
+     * Much smaller FLAP button for landscape.
+     */
+    .flap-button {
+        bottom: 8px;
+
+        width: 155px;
+        height: 36px;
+
+        border-width: 2px;
+        border-radius: 12px;
+
+        font-size: 15px;
+
+        letter-spacing: 1px;
+
+        text-shadow:
+            2px 2px 0 #a43e00;
+
+        box-shadow:
+            0 4px 0 #a8440d,
+            0 0 12px rgba(255, 137, 30, 0.4);
     }
 
     .flap-button:active {
         transform:
             translateX(-50%)
-            translateY(5px);
+            translateY(3px);
 
         box-shadow:
             0 1px 0 #a8440d,
-            0 0 14px rgba(255, 137, 30, 0.4);
+            0 0 9px rgba(255, 137, 30, 0.35);
     }
 
     .arcade-label {
-        bottom: 4px;
+        bottom: 2px;
 
-        font-size: 8px;
+        font-size: 6px;
 
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
     }
 }
